@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1> Etch-a-Sketch</h1>
+    <main>
+        <div class="controls">
+            <div class="color-picker">
+                <input type="color" id="pencolor" name="pencolor" value="#000000">
+                <label for="pencolor">Pen color</label>
+            </div>
+            <div class="bg-color-picker">
+                <input type="color" id="bgcolor" name="bgcolor" value="#ffffff">
+                <label for="bgcolor">Background color</label>
+            </div>
+            <button data-mode='rainbow' class="toggle rainbow">Rainbow mode</button>
+            <button data-mode='darken' class='toggle darken'>Darken</button>
+            <button data-mode='eraser' class='toggle eraser'>Eraser</button>
+            <button  class='clear'>Clear</button>
+            <div class="grid-size">
+                <span class="grid-size-text">16 x 16</span>
+                <input type="range" name="size" id="size" value='16' min="1" max="100" step="1">
+                <label for="size">Grid Size</label>
+            </div>
+        </div>
+        <div class="container"></div>
+    </main>
+</body>
+</html>
